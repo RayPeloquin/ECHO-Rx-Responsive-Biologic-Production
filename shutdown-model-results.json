@@ -1,0 +1,43 @@
+{
+  "schema": "echo-rx-reduced-shutdown/1",
+  "status": "Illustrative mathematics only; no biological or clinical measurements",
+  "units": "Normalized mass and arbitrary time",
+  "parameters": {
+    "depot_initial": 6.0,
+    "target_initial": 1.0,
+    "a": 0.2,
+    "b": 0.15,
+    "c": 0.5
+  },
+  "example": {
+    "target_expression": "3 exp(-0.2t) - 2 exp(-0.5t)",
+    "initial_target_slope": 0.3999999999999999,
+    "peak_time": 1.702752079219969,
+    "peak_target": 1.2804815896164226,
+    "target_integral_to_infinity": 10.999999999999998
+  },
+  "numerical_check": {
+    "method": "RK4; depot, target, eliminated mass and target integral",
+    "horizon": 80.0,
+    "step": 0.01,
+    "maximum_absolute_trajectory_error": 3.7410075037769275e-12,
+    "maximum_mass_balance_error": 5.240252676230739e-14,
+    "equal_rate_maximum_absolute_target_error": 8.57980353430321e-13
+  },
+  "checks": [
+    "Independent RK4 matches the analytical trajectory",
+    "Depot plus target plus eliminated mass is conserved",
+    "The documented post-stop peak and its zero slope agree",
+    "Integrated exposure including the remaining tail equals 11",
+    "Equal and nearly equal rates have a stable limit",
+    "An exact pre-OFF steady state decays without a later target peak",
+    "No-depot transfer reduces to simple target decay",
+    "Nonfinite or physically inconsistent reduced-model parameters are rejected"
+  ],
+  "limitations": [
+    "Ideal instantaneous stop of all further secretion; no leak or death release",
+    "Fixed linear coefficients and homogeneous compartments",
+    "Only the two-compartment illustration, not the full biological model",
+    "No dose, biological clearance time or patient-use interpretation"
+  ]
+}
