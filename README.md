@@ -57,13 +57,15 @@ Uniform death content, instantaneous release, homogeneous compartments and linea
 
 ### Reproduce the reduced shutdown example
 
-`shutdown_model.py` uses **Python 3.9+ and the standard library only**:
+[shutdown_model.py](shutdown_model.py) uses **Python 3.9+ and the standard library only**:
 
 ```bash
 python3 shutdown_model.py
 ```
 
 It checks an analytical two-compartment solution against a separate numerical RK4 integration and prints a JSON record. The expected record is in [shutdown-model-results.json](shutdown-model-results.json).
+
+This script is a reconstruction from the published equations and design brief. Its checks remain active with `python -O` and validate the reduced mathematical illustration.
 
 For an **ideal, instantaneous stop of all further secretion**, fixed coefficients, no leak and no new death-release input:
 
