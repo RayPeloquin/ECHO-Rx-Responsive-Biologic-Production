@@ -6,10 +6,6 @@ ECHO-Rx is a therapeutic research branch of [ECHO-M](https://github.com/RayPeloq
 
 The first proposed benchmark output is **interleukin-1 receptor antagonist (IL-1Ra)**. Related engineered-cell approaches already have published preclinical precedents. Those results do not validate this proposed combination or establish a new treatment.
 
-![ECHO-Rx cellular concept](ECHO-Rx-Cell-Concept.png)
-
-*AI-generated conceptual illustration. Cellular and molecular details are illustrative, not microscopy or a verified construct map.*
-
 ## Read the design
 
 **[Eight-page design brief — architecture, equations, evidence gates, failure analysis and Court disposition](ECHO-Rx-v0.1-Artificial-Medicine.pdf)**
@@ -34,10 +30,6 @@ The first biological decision is deliberately small: can the contained system me
 ## Production OFF is not clearance
 
 Intracellular stores, a depot, ongoing secretion and cell death can all affect residual active protein. Production, residual activity, physical cell removal, chromosome persistence and tissue recovery are separate endpoints. A falling inflammatory reporter cannot by itself establish disease recovery or safe shutdown.
-
-![Conceptual contained research setup](ECHO-Rx-Contained-Research.png)
-
-*AI-generated visualization of an imagined contained research setup. No ECHO-Rx prototype, assay result or implant is pictured.*
 
 ### A mass-balance hypothesis
 
